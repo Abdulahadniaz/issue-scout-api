@@ -3,9 +3,9 @@ import { ConfigModule } from '@nestjs/config';
 import { GithubModule } from './github/github.module';
 import { SupabaseModule } from './supabase/supabase.module';
 import { GoodFirstIssuesModule } from './good-first-issues/good-first-issues.module';
-import { GithubController } from './github/github.controller';
 import configuration from './config/configurations';
-import { GoodFirstIssuesController } from './good-first-issues/good-first-issues.controller';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
 
 @Module({
   imports: [
@@ -17,6 +17,7 @@ import { GoodFirstIssuesController } from './good-first-issues/good-first-issues
     SupabaseModule,
     GoodFirstIssuesModule,
   ],
-  controllers: [],
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule { }
