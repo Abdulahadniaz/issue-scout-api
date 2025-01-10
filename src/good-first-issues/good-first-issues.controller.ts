@@ -1,4 +1,5 @@
-import { Controller, Get, Param } from '@nestjs/common';
+/* eslint-disable prettier/prettier */
+import { Controller, Get } from '@nestjs/common';
 import { GoodFirstIssuesService } from './good-first-issues.service';
 import { GoodFirstIssue } from './interfaces/good-first-issue.interface';
 

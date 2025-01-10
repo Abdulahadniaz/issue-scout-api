@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Module } from '@nestjs/common';
 import { GoodFirstIssuesController } from './good-first-issues.controller';
 import { GoodFirstIssuesService } from './good-first-issues.service';

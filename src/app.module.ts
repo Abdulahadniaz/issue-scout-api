@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { GithubModule } from './github/github.module';
@@ -6,6 +7,8 @@ import { GoodFirstIssuesModule } from './good-first-issues/good-first-issues.mod
 import configuration from './config/configurations';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { ScheduleModule } from '@nestjs/schedule';
+
 
 @Module({
   imports: [
@@ -13,6 +16,7 @@ import { AppService } from './app.service';
       load: [configuration],
       isGlobal: true,
     }),
+    ScheduleModule.forRoot(),
     GithubModule,
     SupabaseModule,
     GoodFirstIssuesModule,

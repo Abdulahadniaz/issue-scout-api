@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Module } from '@nestjs/common';
 import { GithubService } from './github.services';
 import { GithubController } from './github.controller';

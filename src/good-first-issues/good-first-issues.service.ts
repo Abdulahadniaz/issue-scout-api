@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+
 import { Injectable } from '@nestjs/common';
 import { SupabaseService } from '../supabase/supabase.service';
 import { GoodFirstIssue } from './interfaces/good-first-issue.interface';
