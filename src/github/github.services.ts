@@ -7,7 +7,7 @@ import axios from 'axios';
 @Injectable()
 export class GithubService {
     private hasMoreRepos = true;
-    private currentPage = 1;
+    private currentPage = 12;
 
     constructor(
         private configService: ConfigService,
